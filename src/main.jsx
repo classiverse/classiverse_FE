@@ -8,16 +8,40 @@ import {
 // 1. App.jsx (공통 레이아웃 + Outlet) 임포트
 import App from './App.jsx';
 
+// 2. 고정할 책의 ID를 상수로 정의합니다. (나중에 바꾸기 쉽도록)
+const DEFAULT_BOOK_ID = "pride-and-prejudice";
+
 // 3. 라우터 객체 정의
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />, // App.jsx가 모든 페이지의 부모(레이아웃)가 됨
-    // 4. App.jsx의 <Outlet>에 렌더링될 자식 페이지들
+    element: <App />, 
     children: [
-      { index: true, element: <BookInfoPage /> }, // path: '/'의 기본 페이지
-      { path: '/story/:storyId', element: <StoryViewerPage /> },
       
+      // 1. 루트 '/' 경로로 접속하면, 고정된 책 상세 페이지로 바로 리디렉션합니다.
+      {
+        index: true,
+        element: <Navigate replace to={`/books/${DEFAULT_BOOK_ID}`} />
+      },
+      
+      // 2. '/books' (원래 목록 페이지) 경로로 접속해도, 고정된 책 상세 페이지로 리디렉션합니다.
+      {
+        path: '/books',
+        element: <Navigate replace to={`/books/${DEFAULT_BOOK_ID}`} />
+      },
+
+      // 3. 책 상세 페이지 경로는 그대로 둡니다.
+      // (이 경로가 리디렉션의 '목적지'가 됩니다)
+      {
+        path: '/books/:bookId',
+        element: <BookDetailPage />
+      },
+
+      // 4. 스토리 뷰어 페이지 경로는 그대로 둡니다.
+      {
+        path: '/story/:storyId/:characterId',
+        element: <StoryViewerPage />
+      },
     ],
   },
 ]);
