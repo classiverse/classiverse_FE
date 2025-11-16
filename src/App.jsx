@@ -6,7 +6,7 @@ import GlobalStyle from './styles/GlobalStyle';
 function App() {
   // 사용자 정보 상태 관리
   const [user, setUser] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   // 앱 진입 시 사용자 정보 로드
   useEffect(() => {

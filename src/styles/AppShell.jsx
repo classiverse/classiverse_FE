@@ -17,7 +17,7 @@ const Page = styled.div`
   height: 100dvh; /* 데스크톱/모바일 모두 가득 */
   display: grid;
   place-items: center;
-  background: #0b0c10;
+  background: #070707;
   overflow: hidden;
 `;
 
@@ -29,7 +29,7 @@ const PhoneFrame = styled.div`
   width: min(100vw, calc(100dvh * (393 / 852)));
   /* height는 aspect-ratio에 따라 자동 계산됨 */
   max-width: 393px; /* 최대 너비 제한 */
-  background: #fff;
+  background: #070707;
   overflow-x: hidden; /* 가로 스크롤 방지 */
   overflow-y: auto; /* 세로 스크롤 허용 */
   position: relative; /* 내부 absolute 기준 */
@@ -48,7 +48,7 @@ const MobileFrame = styled.div`
   width: 100vw;
   height: 100vh; /* 폴백 */
   height: 100dvh; /* 주소창 변화 대응 */
-  background: #fff;
+  background: #070707;
   overflow-x: hidden; /* 가로 스크롤 방지 */
   overflow-y: auto; /* 세로 스크롤 허용 */
   position: relative;

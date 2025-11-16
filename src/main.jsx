@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
+  Navigate,
 } from 'react-router-dom';
 
 // 1. App.jsx (공통 레이아웃 + Outlet) 임포트
 import App from './App.jsx';
+import AppShell from './styles/AppShell.jsx';
+import BookDetailPage from './pages/BookDetailPage.jsx';
+import StoryViewerPage from './pages/StoryViewerPage.jsx';
 
 // 2. 고정할 책의 ID를 상수로 정의합니다. (나중에 바꾸기 쉽도록)
 const DEFAULT_BOOK_ID = "pride-and-prejudice";

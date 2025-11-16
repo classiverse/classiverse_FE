@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     overflow-x: hidden; /* 가로 스크롤 방지 */
     overflow-y: auto; /* 세로 스크롤 허용 */
+    background: #070707;
     
     /* 스크롤바 숨기기 */
     scrollbar-width: none; /* Firefox */
