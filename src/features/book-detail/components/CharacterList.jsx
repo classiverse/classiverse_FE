@@ -17,7 +17,7 @@ const Scroller = styled.div`
   padding-left: 28px;
   padding-right: 28px;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding-bottom: 25px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
