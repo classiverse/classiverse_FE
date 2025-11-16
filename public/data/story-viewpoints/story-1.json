@@ -7,7 +7,7 @@
       "characterId": "elizabeth",
       "name": "엘리자베스 베넷",
       "tag": "원작",
-      "preview": "그날 이후로 그 오만한 얼굴이 자꾸 떠오르는 게 더 싫어",
+      "preview": "그날 이후로 그 오만한 얼굴이\n자꾸 떠오르는 게 더 싫어",
       "avatar": "/images/avatars/elizabeth.png",
       "contentDataUrl": "/data/story-content/story-1_elizabeth.json"
     },
@@ -15,7 +15,7 @@
       "characterId": "darcy",
       "name": "피츠윌리엄 다아시",
       "tag": null,
-      "preview": "솔직히 그녀가 눈에 띄었다 하지만...",
+      "preview": "솔직히 그녀가 눈에 띄었다\n하지만...",
       "avatar": "/images/avatars/darcy.png",
       "contentDataUrl": "/data/story-content/story-1_darcy.json"
     },
@@ -23,7 +23,7 @@
       "characterId": "jane",
       "name": "제인 베넷",
       "tag": null,
-      "preview": "둘 다 아니래놓고... 나는 다 보였는데?",
+      "preview": "둘 다 아니래놓고...\n나는 다 보였는데?",
       "avatar": "/images/avatars/jane.png",
       "contentDataUrl": "/data/story-content/story-1_jane.json"
     },
