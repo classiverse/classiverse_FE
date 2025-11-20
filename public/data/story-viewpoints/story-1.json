@@ -7,7 +7,7 @@
       "characterId": "elizabeth",
       "name": "엘리자베스 베넷",
       "tag": "원작",
-      "preview": "그날 이후로 그 오만한 얼굴이\n자꾸 떠오르는 게 더 싫어",
+      "preview": "무도회에 갔다가\n듣지 말아야 할 말을 들었어.",
       "avatar": "/images/avatars/elizabeth.png",
       "contentDataUrl": "/data/story-content/story-1_elizabeth.json"
     },
@@ -23,7 +23,7 @@
       "characterId": "jane",
       "name": "제인 베넷",
       "tag": null,
-      "preview": "둘 다 아니래놓고...\n나는 다 보였는데?",
+      "preview": "좋은 분을 만났고...\n엘리자베스에게도 일이 조금 있었어.",
       "avatar": "/images/avatars/jane.png",
       "contentDataUrl": "/data/story-content/story-1_jane.json"
     },
@@ -31,10 +31,9 @@
       "characterId": "bingley",
       "name": "찰스 빙리",
       "tag": null,
-      "preview": "내 친구 다아시가 좀... 말이 없어",
+      "preview": "무도회가 참 즐거웠어요.\n다아시 때문에 일이 있긴 했지만요.",
       "avatar": "/images/avatars/bingley.png",
       "contentDataUrl": "/data/story-content/story-1_bingley.json"
     }
   ]
 }
-

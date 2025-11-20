@@ -5,11 +5,10 @@ const GlobalStyle = createGlobalStyle`
   /* Pretendard Variable 폰트 로드 */
   @font-face {
     font-family: 'Pretendard Variable';
-    src: url('/fonts/PretendardVariable.woff2') format('woff2');
+    src: url('/font/PretendardVariable.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-    
   }
 
   /* VITRO PRIDE OTF 폰트 로드 */
@@ -35,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden; /* 가로 스크롤 방지 */
     overflow-y: auto; /* 세로 스크롤 허용 */
     background: #070707;
+    font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     
     /* 스크롤바 숨기기 */
     scrollbar-width: none; /* Firefox */

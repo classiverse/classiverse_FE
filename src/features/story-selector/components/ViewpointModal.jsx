@@ -30,7 +30,6 @@ const Header = styled.div`
   gap: 4.4px;
   align-items: center;
   text-align: center;
-  width: 176px;
 `;
 
 const Title = styled.p`
@@ -56,7 +55,7 @@ const ViewpointList = styled.div`
   flex-direction: column;
   gap: 11px;
   align-items: flex-start;
-  width: 100%;
+  width: 110%;
   cursor: pointer;
 `;
 
@@ -64,7 +63,7 @@ const ViewpointButton = styled.button`
   background: #2a2a2a;
   border: none;
   border-radius: 16.5px;
-  padding: 0 0 5.5px 0;
+  padding:5.5px;
   display: flex;
   gap: 4.4px;
   align-items: center;

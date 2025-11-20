@@ -22,7 +22,6 @@ const Header = styled.div`
   gap: 2px;
   align-items: center;
   text-align: center;
-  width: 111px;
   z-index: 10;
 `;
 

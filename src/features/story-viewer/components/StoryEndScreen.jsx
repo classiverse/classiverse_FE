@@ -15,7 +15,6 @@ const TopMessageArea = styled.div`
   position: absolute;
   top: 106px;
   left: 29px;
-  width: 178px;
   display: flex;
   flex-direction: column;
   gap: 2px;
