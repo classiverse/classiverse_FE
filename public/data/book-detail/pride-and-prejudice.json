@@ -24,12 +24,14 @@
     {
       "storyId": "story-4",
       "title": "비 오는 날, 다시 만난 두 사람",
-      "viewpointsDataUrl": "/data/story-viewpoints/story-4.json"
+      "viewpointsDataUrl": "/data/story-viewpoints/story-4.json",
+      "locked": true
     },
     {
       "storyId": "story-5",
       "title": "오만과 편견, 그 이름의 끝",
-      "viewpointsDataUrl": "/data/story-viewpoints/story-5.json"
+      "viewpointsDataUrl": "/data/story-viewpoints/story-5.json",
+      "locked": true
     }
   ],
   "characters": [

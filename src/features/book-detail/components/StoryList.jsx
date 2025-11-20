@@ -62,6 +62,29 @@ const StoryTitle = styled.span`
   font-weight: 400;
 `;
 
+const TitleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+`;
+
+const LockIcon = styled.img`
+  width: 9px;
+  height: 10.8px;
+  flex-shrink: 0;
+`;
+
+const LockedItem = styled(Item)`
+  opacity: 0.5;
+  cursor: not-allowed;
+  justify-content: flex-start;
+  
+  &:active {
+    transform: none;
+  }
+`;
+
 export default function StoryList({ stories, onStoryClick, book, activeStoryId }) {
   const list = stories ?? book?.stories ?? [];
   if (!Array.isArray(list) || list.length === 0) return null;
@@ -74,15 +97,26 @@ export default function StoryList({ stories, onStoryClick, book, activeStoryId }
         <RailHighlight />
         {list.map((story) => {
           const isActive = activeStoryId && activeStoryId === story.storyId;
+          const isLocked = story.locked === true;
+          const ItemComponent = isLocked ? LockedItem : Item;
+          
           return (
-            <Item
+            <ItemComponent
               key={story.storyId}
-              onClick={() => onStoryClick?.(story.viewpointsDataUrl)}
+              onClick={() => !isLocked && onStoryClick?.(story.viewpointsDataUrl)}
+              disabled={isLocked}
               data-story-id={story.storyId}
               style={isActive ? { color: '#f6d4ff', borderColor: '#f6d4ff' } : undefined}
             >
-              <StoryTitle style={isActive ? { color: '#f6d4ff' } : undefined}>{story.title}</StoryTitle>
-            </Item>
+              {isLocked ? (
+                <TitleWrapper>
+                  <StoryTitle style={isActive ? { color: '#f6d4ff' } : undefined}>{story.title}</StoryTitle>
+                  <LockIcon src="/images/story-lock.svg" alt="locked" />
+                </TitleWrapper>
+              ) : (
+                <StoryTitle style={isActive ? { color: '#f6d4ff' } : undefined}>{story.title}</StoryTitle>
+              )}
+            </ItemComponent>
           );
         })}
       </List>
