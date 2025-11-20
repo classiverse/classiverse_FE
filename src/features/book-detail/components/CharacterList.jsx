@@ -32,7 +32,7 @@ const Card = styled.button`
   justify-content: flex-start;
   gap: 0;
   padding: 0 10px 12px 10px;
-  min-width: 105px;
+  min-width: 130px;
   background: ${props => props.$hasAffinity
     ? 'linear-gradient(221deg, #212121 0%, #4D3B51 49%, #212121 75%)'
     : '#212121'};
@@ -111,4 +111,3 @@ export default function CharacterList({ characters, onCharacterClick, book }) {
     </Section>
   );
 }
-
