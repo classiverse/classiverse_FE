@@ -2,8 +2,8 @@
 
 **당신의 시점으로 다시 여는 고전의 세계, 클래시버스**
 
-새로운 인물의 시선으로 읽었던 책을 다시 읽어보세요.
-인스타그램 @classiverse.kr
+새로운 인물의 시선으로 읽었던 책을 다시 읽어보세요.\n
+인스타그램 @classiverse.kr\n
 🔗 https://www.instagram.com/classiverse.kr/
 
 <br/>
